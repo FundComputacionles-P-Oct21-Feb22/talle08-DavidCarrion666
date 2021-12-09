@@ -1,0 +1,42 @@
+(ventas(5),i[0-n])  // arreglo que debe ser llenado por el usuario
+
+
+(dias(5), x(20)[{a-z}, {BS}])
+dias[0]<-- "Lunes"
+dias[1]<-- "Martes"
+dias[2]<-- "Miércoles"
+dias[3]<-- "Jueves"
+dias[4]<-- "Viernes"
+
+
+----------------------------------- Miniespecificación ---------------------------------
+
+1. Inicio
+
+2. (dias(5), x(20)[{a-z}, {BS}])
+3. dias[0]<-- "Lunes"
+4. dias[1]<-- "Martes"
+5. dias[2]<-- "Miércoles"
+6. dias[3]<-- "Jueves"
+7. dias[4]<-- "Viernes"
+
+8. (ventas(5),i[0-n]) 
+9. ventas[0]
+10. ventas[1]
+11. ventas[2]
+12. ventas[3]
+13. ventas[4]
+
+14. precios, i[0, n]
+15. indice, i[0, n] <-- 0
+
+16. Mientras  (indice < 5) Entonces
+17. Escribir "Ingrese el valor de las ventas"
+18. Leer <-- precios
+19. ventas[indice] <-- precios
+20. Escribir dias[indice] + "$" + ventas[indice]
+21. indice = indice + 1
+
+22. Fin_Mientras
+23. Fin
+
